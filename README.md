@@ -114,6 +114,9 @@ Prefer Docker, or need Search or Total? Mount your folder and go:
 - **2026-11-08** · [GroupDocs.Annotation.Mcp 26.11.0](https://www.nuget.org/packages/GroupDocs.Annotation.Mcp) moves to engine 26.10.0: opening, previewing or saving a document no longer downloads the remote images and files it references.
 - **2026-11-06** · [GroupDocs.Assembly for Python via .NET 26.11.0](https://pypi.org/project/groupdocs-assembly-net/) is on PyPI.
 - **2026-11-05** · [GroupDocs.Parser.Mcp 26.11.0](https://www.nuget.org/packages/GroupDocs.Parser.Mcp) is on NuGet as per-runtime packages, so `dnx GroupDocs.Parser.Mcp --yes` now works. Docker is no longer the only way to run it.
+- **2026-11-04** · [GroupDocs.Search for Python via .NET 26.10.0](https://pypi.org/project/groupdocs-search-net/) — new product: full-text search and indexing for documents. [GroupDocs.Parser for Python via .NET 26.10.0](https://pypi.org/project/groupdocs-parser-net/) shipped the same day.
+- **2026-11-01** · [GroupDocs.Editor.Mcp 26.10.0](https://github.com/groupdocs-editor/GroupDocs.Editor.Mcp/releases) — first release. Edit Office and PDF files through an HTML round-trip, fill form fields.
+- **2026-10-15** · [GroupDocs.Watermark for Python via .NET 26.10.0](https://pypi.org/project/groupdocs-watermark-net/) is on PyPI.
 <!-- whats-new:end -->
 
 ### `// ~/Contact.cs`
