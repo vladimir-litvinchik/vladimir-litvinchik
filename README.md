@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=2F81F7&center=true&vCenter=true&width=640&lines=Making+documents+talk+to+AI+agents;MCP+servers+for+GroupDocs+.NET+libraries;On-premise%3A+documents+stay+on+your+machine;PDF%2C+Word%2C+Excel+%E2%86%92+agent-ready+tools" alt="Making documents talk to AI agents" />
 
-[![MCP servers](https://img.shields.io/badge/GroupDocs_MCP_servers-14-2F81F7?style=flat-square&logo=modelcontextprotocol&logoColor=white)](https://github.com/groupdocs/GroupDocs.Mcp.Installer)
+[![MCP servers](https://img.shields.io/badge/GroupDocs_MCP_servers-15-2F81F7?style=flat-square&logo=modelcontextprotocol&logoColor=white)](https://github.com/groupdocs/GroupDocs.Mcp.Installer)
 [![NuGet](https://img.shields.io/badge/NuGet-GroupDocs.*.Mcp-004880?style=flat-square&logo=nuget&logoColor=white)](https://www.nuget.org/packages?q=GroupDocs.Mcp)
 [![Docker Hub](https://img.shields.io/badge/Docker_Hub-groupdocs-2496ED?style=flat-square&logo=docker&logoColor=white)](https://hub.docker.com/u/groupdocs)
 [![PyPI](https://img.shields.io/badge/PyPI-groupdocs--*--net-3775A9?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/search/?q=groupdocs)
@@ -35,7 +35,7 @@ var me = new Developer
 
 ### `// ~/McpServers.cs` — give your agent document superpowers
 
-**14 servers, one pattern.** Each wraps a GroupDocs .NET library, runs from NuGet with `dnx` or as a Docker image, and is listed in the MCP Registry. Search and Total are Docker-only because they exceed NuGet's 250 MB limit.
+**15 servers, one pattern.** Each wraps a GroupDocs .NET library, runs from NuGet with `dnx` or as a Docker image, and is listed in the MCP Registry. Search and Total are Docker-only because they exceed NuGet's 250 MB limit.
 
 | Server | What your agent can do | Run with |
 |---|---|---|
@@ -52,8 +52,8 @@ var me = new Developer
 | [**Merger**](https://github.com/groupdocs-merger/GroupDocs.Merger.Mcp) | Merge documents and split out pages | `dnx` · Docker |
 | [**Watermark**](https://github.com/groupdocs-watermark/GroupDocs.Watermark.Mcp) | Add, find and remove text and image watermarks | `dnx` · Docker |
 | [**Editor**](https://github.com/groupdocs-editor/GroupDocs.Editor.Mcp) | Edit Office and PDF files through an HTML round-trip, fill form fields | `dnx` · Docker |
-| [**Total**](https://github.com/groupdocs-total/GroupDocs.Total.Mcp) | 38 tools from 10 products behind one server (no Search or Editor) | Docker |
-| [**Assembly**](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp) | Generate documents from templates — *in progress* | — |
+| [**Assembly**](https://github.com/groupdocs-assembly/GroupDocs.Assembly.Mcp) | Fill Word, Excel, PowerPoint and e-mail templates with JSON, XML or CSV data; one document per record for mail merge | `dnx` · Docker |
+| [**Total**](https://github.com/groupdocs-total/GroupDocs.Total.Mcp) | 38 tools from 10 products behind one server (no Search, Editor or Assembly) | Docker |
 
 **One-run setup for all of them →** [GroupDocs.Mcp.Installer](https://github.com/groupdocs/GroupDocs.Mcp.Installer) registers the servers in Claude Desktop, Claude Code, VS Code, Visual Studio 2022, Cursor, Windsurf, Cline and Codex CLI, or emits a `docker-compose.yml`. Shared plumbing → [GroupDocs.Mcp.Core](https://github.com/groupdocs/GroupDocs.Mcp.Core).
 
@@ -109,10 +109,11 @@ Prefer Docker, or need Search or Total? Mount your folder and go:
 ### `// ~/WhatsNew.cs`
 
 <!-- whats-new:start -->
+- **2026-11-09** · [GroupDocs.Assembly.Mcp 26.11.0](https://www.nuget.org/packages/GroupDocs.Assembly.Mcp) — first release. Fill Word, Excel, PowerPoint and e-mail templates with JSON, XML or CSV data, or generate one document per record.
+- **2026-11-09** · [GroupDocs.Total for Python via .NET 26.11.0](https://pypi.org/project/groupdocs-total-net/) is on PyPI: `pip install groupdocs-total-net` installs the 14 product packages in one step.
+- **2026-11-08** · [GroupDocs.Annotation.Mcp 26.11.0](https://www.nuget.org/packages/GroupDocs.Annotation.Mcp) moves to engine 26.10.0: opening, previewing or saving a document no longer downloads the remote images and files it references.
+- **2026-11-06** · [GroupDocs.Assembly for Python via .NET 26.11.0](https://pypi.org/project/groupdocs-assembly-net/) is on PyPI.
 - **2026-11-05** · [GroupDocs.Parser.Mcp 26.11.0](https://www.nuget.org/packages/GroupDocs.Parser.Mcp) is on NuGet as per-runtime packages, so `dnx GroupDocs.Parser.Mcp --yes` now works. Docker is no longer the only way to run it.
-- **2026-11-04** · [GroupDocs.Parser](https://pypi.org/project/groupdocs-parser-net/) and [GroupDocs.Search](https://pypi.org/project/groupdocs-search-net/) for Python via .NET 26.10 are on PyPI.
-- **2026-11-01** · [GroupDocs.Editor.Mcp 26.10.0](https://github.com/groupdocs-editor/GroupDocs.Editor.Mcp/releases) — first release. Edit Office and PDF files through an HTML round-trip, fill form fields.
-- **2026-10-14** · [GroupDocs.Search.Mcp 26.10.1](https://github.com/groupdocs-search/GroupDocs.Search.Mcp/releases).
 <!-- whats-new:end -->
 
 ### `// ~/Contact.cs`
